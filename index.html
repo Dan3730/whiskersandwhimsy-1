@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>whiskers</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="swipe.css">  
+<link rel="stylesheet" href="team.css"> 
+<script defer src="dynamicloader.js"></script>
+<script defer src="swipe.js"></script>
+</head>
+<body>
+<!--Header-->
+<header class="toolbar">
+<!-- LEFT SIDE -->
+<div class="toolbar-left">
+ <a href="https://whiskersandwhimsy.netlify.app/" class="tool-btn" data-page="index.html"> &#8962;</a>
+ <a href="https://whiskersandwhimsyemail.netlify.app/" class="tool-btn" data-page="index.html"> &#9993;</a>
+</div>
+<!-- RIGHT SIDE -->
+<div class="toolbar-right">
+<div id="menuToggle" class="menu-btn">☰
+</div>
+</div>
+</header>
+<!------------------Menu------------------------->
+<nav id="menuOverlay">
+<div class="menu-header">
+<h2>Menu</h2>
+ <button id="closeMenu">&times;</button>
+</div>
+<div class="menu-grid">
+<!-- BIO -->
+<div class="menu-section">
+<h3 style="color:white;">Bio</h3> 
+ <a href="./comingsoon.html" data-page="comingsoon.html">
+  Who We Are
+ </a>
+ <a href="./comingsoon.html" data-page="comingsoon.html">
+  Roadmap
+ </a>
+ <a href="./social.html" data-page="social.html">
+  Socials
+ </a>
+</div>
+<!-- Future development 
+<div class="menu-section">
+<h3>Listings</h3>
+ <a href="listings.html" data-page="listings.html">Listings</a>
+</div>
+-->
+<!-- GALLERY -->
+<div class="menu-section">
+<h3 style="color:white;">Gallery</h3>
+ <a href="./gallery/gallery.html" data-page="./gallery/gallery.html">
+ Gallery
+ </a>
+ <a href="./gallery/dogs.html" data-page="./gallery/dogs.html">
+ Dog Artwork
+ </a>
+ <a href="./gallery/cats.html" data-page="./gallery/cats.html">
+ Cat Artwork
+ </a>
+ <a href="./gallery/others.html" data-page="./gallery/others.html">
+ Other Artwork
+ </a>
+</div>
+<!-- SHOP -->
+<div class="menu-section">
+<h3 style="color:white;">Shop</h3>
+<a href="./comingsoon.html" data-page="comingsoon.html">
+ Current Listings<br>
+ </a>
+ <a href="https://whiskersandwhimsyemail.netlify.app/">
+ Contact
+ </a>
+</div>
+</div>
+</nav>
+<!----------------------MAIN-------------------------------->
+<main class="content" id="dynamicContent">
+<div class="container">
+<!-- WELCOME-->
+<h1>Welcome</h1>
+<!--CAROUSEL-->
+<div class="carousel">
+<!-- LEFT BUTTON -->
+<button class="btn prev" onclick="moveSlide(-1)">
+ <i class="fa-solid fa-chevron-left"></i>
+</button>
+<!-- SLIDES -->
+<div class="slides" id="slides">
+<!-- SLIDE 1 -->
+<div class="slide">
+ <img src="./gallery/images/dogs/briard.png" alt="briard">
+<!--<div class="content">
+ <h2>Mountain Escape</h2>
+ <p>Peaceful mountain scenery captured during sunrise with soft natural lighting.
+</p>
+</div> -->
+</div>
+<!-- SLIDE 2 -->
+<div class="slide">
+  <img src="./gallery/images/dogs/blue-merel-collie.png" alt="blue-merel-collie">
+<!--<div class="content">
+ <h2>Ocean Horizon</h2>
+  <p>A cinematic coastal scene with deep blues and warm sunset tones.
+  </p>
+</div>-->
+</div>
+<!--SLIDE 3 -->
+<div class="slide">
+  <img src="./gallery/images/dogs/boxer-yellow.png" alt="boxer-yellow">
+<!--<div class="content">
+<h2>Forest Adventure</h2>
+ <p>Dense woodland scenery with rich greens and immersive atmosphere.
+ </p>
+</div>-->
+</div>
+</div>
+<!--RIGHT BUTTON-->
+<button class="btn next" onclick="moveSlide(1)">
+ <i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+<!--PAGINATION -->
+<div class="dots" id="dots"></div>
+</div>
+ <!--OUR TEAM-->
+<h1>Meet Our Team</h1>
+<section class="hero-section">
+<p class="hero-text">
+<section class="team-container">
+<!--OWNER-->
+<div class="profile-card">
+ <h2>Owner / Founder</h2>
+ <h3>Rebecca Blazer</h3>
+<div class="image-circle">
+ <img src="./gallery/becca.jpg" alt="owner becca">
+</div>
+ <p>
+  Rebecca is the creative force behind the brand, dedicated to building 
+  meaningful experiences and delivering high-quality results. Her passion
+  for excellence drives every decision made within the company.
+ </p>
+</div>
+<!-- CEO -->
+<div class="profile-card">
+ <h2>CEO</h2>
+ <h3>Daniel Howard</h3>
+<div class="image-circle">
+ <img src="./gallery/dan.jpg" alt="dan ceo">
+</div>
+ <p>
+  Daniel oversees operations and strategy, ensuring the business continues
+  to grow with stability and innovation. His leadership style focuses on
+  clarity, growth, and long-term success.
+ </p>
+</div>
+<!--DIC-->
+<div class="profile-card">
+ <h2>Dog In Charge</h2>
+ <h3>Buddy</h3>
+<div class="image-circle">
+ <img src="./gallery/buddy.jpg" alt="dic">
+</div>
+<p>
+  Buddy has been a vital part of Daniel's life, serving as his best friend
+  and most importantly being trained as his service dog.
+  Buddy Loves treats such as... Cheesburgers, and
+  more importantly his favorite Chicharrones!
+  Buddy is loved throught his community and
+  always ready to protect his favorite snacks!
+</p>
+</div>
+</section>
+<p style="margin-top: 600px">&copy; 
+<span id="year"></span> 
+<strong>Whiskers</strong> • All rights reserved.</p>
+</main>
+<!-------FOOTER-------->
+<footer>
+<img src="./gallery/logo.jpg" alt="Logo" class="logo">
+</footer>
+</body>
+</html>
+
+

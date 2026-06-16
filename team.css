@@ -1,0 +1,113 @@
+/*Team Container Cards*/
+body {
+ margin: 0;
+ font-family: "Courier New", monospace;
+ background: transparent;
+ color: white;
+}
+/* Header */
+.top-header {
+ padding: 60px 20px 30px;
+ background: transparent;
+}
+.top-header h1 {
+ font-size: 42px;
+ text-align: center;
+ margin-bottom: 0px;
+}
+.top-header p {
+ color: white;
+ font-size: 16px;
+ text-align: center;
+}
+/* Layout */
+.team-container {
+ display: flex;
+ justify-content: center;
+ gap: 10px;
+ flex-wrap: wrap;
+ padding: 60px 20px;
+}
+/* Card */
+.profile-card {
+ background: transparent;
+ width: 600px;
+ padding: 25px;
+ border-radius: 18px;
+ box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+ text-align: center;
+ transition: transform 0.3s ease;
+}
+.profile-card:hover {
+ transform: translateY(-5px);
+}
+.profile-card h2 {
+ font-size: 18px;
+ color: white;
+ margin-bottom: 5px;
+}
+.profile-card h3 {
+ font-size: 22px;
+ margin-bottom: 20px;
+ color: white;
+}
+
+/* Oval / Circle Image */
+.image-circle {
+ width: 160px;
+ height: 200px;
+ margin: 0 auto 20px;
+ border-radius: 50% / 40%;
+ overflow: hidden;
+ border: 4px solid #ddd;
+ background: #eee;
+}
+.image-circle img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+/* Text */
+.profile-card p {
+ font-size: 17px;
+ line-height: 2.6;
+ color: white;
+}
+
+/*May not need this was the old hero.css*/
+/*HERO IMAGE CIRCLE
+.image-circle {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 220px;
+ height: 220px;
+ margin: 20px auto;
+ border-radius: 50%;
+ overflow: hidden;
+ border: 4px solid #ffffff;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+ background: transparent;
+}
+/* IMAGE 
+.image-circle img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ display: block;
+}
+/*TABLETS
+@media (max-width: 768px) {
+ .image-circle {
+  width: 180px;
+  height: 180px;
+}
+}
+/*MOBILE DEVICES
+@media (max-width: 480px) {
+ .image-circle {
+  width: 140px;
+  height: 140px;
+  border-width: 3px;
+}
+}

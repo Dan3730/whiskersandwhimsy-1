@@ -1,0 +1,130 @@
+/*TOOLBAR*/
+:root {
+  --blue: #008ae6;
+  --black: #000000;
+  --pink: #f30081;
+  --white: #f4f4f4;
+}
+.toolbar{
+ width:100%;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:18px 22px;
+ position:sticky;
+ top:0;
+ z-index:999;
+ background: var(--black);
+ backdrop-filter:blur(10px);
+ border-bottom: none;
+}
+/*LEFT/RIGHT(global)*/
+.toolbar-left,
+.toolbar-right{
+ display:flex;
+ align-items:center;
+ gap:15px;
+}
+/*Left Side Toolbar*/
+/*Home Button*/
+.home-btn{
+ width:55px;
+ height:55px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ background: var(--black);
+ color:white;
+ font-size:30px;
+ border:2px solid white;
+ border-radius:50%;
+ backdrop-filter:blur(8px);
+ transition:0.3s ease;
+ box-shadow:0 6px 18px rgba(0,0,0,0.2);
+}
+.home-btn:hover{
+ background:white;
+ color:black;
+ transform:scale(1.08);
+}
+/*Email*/
+.email-btn{
+ width:55px;
+ height:55px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ background:rgba(255,255,255,0.12);
+ color:white;
+ font-size:28px;
+ border:2px solid white;
+ border-radius:50%;
+ backdrop-filter:blur(8px);
+ transition:0.3s ease;
+ box-shadow:0 6px 18px rgba(0,0,0,0.2);
+}
+.email-btn:hover{
+ background:white;
+ color:black;
+ transform:scale(1.08);
+}
+/*TOOL BUTTONS*/
+.tool-btn{
+ width:52px;
+ height:52px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ border-radius:50%;
+ background:rgba(255,255,255,0.12);
+ border:2px solid var(--pink);
+ color:white;
+ font-size:28px;
+ transition:0.3s ease;
+ backdrop-filter:blur(8px);
+ box-shadow:0 6px 18px rgba(0,0,0,0.2);
+}
+/*HOVER*/
+.tool-btn:hover{
+ background:white;
+ color:black;
+ transform:scale(1.08);
+ border:2px solid var(--pink);
+}
+/*Right Side Toolbar*/
+/*MENU BUTTON*/
+.menu-btn{
+ width:55px;
+ height:55px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ border-radius:50%;
+ background:rgba(255,255,255,0.12);
+ border:2px solid var(--pink);
+ color:white;
+ font-size:30px;
+ cursor:pointer;
+ transition:0.3s ease;
+ backdrop-filter:blur(8px);
+ box-shadow:0 6px 18px rgba(0,0,0,0.2);
+}
+/*HOVER*/
+.menu-btn:hover{
+ background: var(--white);
+ color:black;
+ transform:scale(1.08);
+ border:2px solid var(--pink);
+}
+/*MOBILE*/
+@media(max-width:768px){
+  .toolbar{
+   padding:14px 16px;
+  }
+  .tool-btn,
+  .menu-btn{
+   width:46px;
+   height:46px;
+   font-size:24px;
+  }
+}
